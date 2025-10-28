@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contact Form Container */
+.contact-form {
+  background: #ffffff;
+  padding: 35px 30px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.contact-form h2 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Focus State */
+input:focus,
+textarea:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 6px rgba(9, 132, 227, 0.3);
+  outline: none;
+}
+
+/* Error Messages */
+.error {
+  color: #d63031;
+  font-size: 0.9em;
+  margin-top: 4px;
+  padding-left: 2px;
+}
+
+/* Success Message */
+.success {
+  color: #00b894;
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* Button Styling */
+button {
+  margin-top: 20px;
+  background-color: #0984e3;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #74b9ff;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 22px;
+  }
+}
